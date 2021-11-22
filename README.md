@@ -1,4 +1,4 @@
-### Title Bot
+### Title Bot  
 
 Create a web form that allows a user to type in a url to any website and have it then output the Title of that website on the same page. For example, if I typed in CNN.COM into the text input of the web page, it would spit out:
 
@@ -18,9 +18,14 @@ This task should take you somewhere around 4 hours. Make a git repository availa
 - Dockerize the application
 
 
-### Setup
+### Setup  
 
-1. Install sbt
+1. Install Docker Compose  
+```
+$ apt-get install docker-compose -y  
+```
+
+1. Install sbt  
 ```
 $ sudo apt-get update
 $ sudo apt-get install apt-transport-https curl gnupg -yqq
@@ -32,19 +37,30 @@ $ sudo apt-get update
 $ sudo apt-get install sbt
 ```
 
-### Utilization
+### Utilization  
+#### Docker  
+1. Use Docker Compose to build and run the web page.  
+```
+$ docker-compose up  
+```
 
+2. View webpage in any browser.  
+```
+$ http://localhost:9000/  
+```
+
+#### Command Line  
 1.  Run the sbt tool in the console of your choice.  
 ```
-$ sbt
+$ sbt  
 ```
 
 2. Within the SBT Terminal use the following command.  
 ```
-$ run
+$ run  
 ```
 
 3. View webpage in any browser.  
 ```
-$ http://localhost:9000/
+$ http://localhost:9000/  
 ```
