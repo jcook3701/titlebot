@@ -20,12 +20,7 @@ This task should take you somewhere around 4 hours. Make a git repository availa
 
 ### Setup
 
-1. Install NodeJS
-```
-$ apt install nodejs
-```
-
-2. Install sbt
+1. Install sbt
 ```
 $ sudo apt-get update
 $ sudo apt-get install apt-transport-https curl gnupg -yqq
@@ -39,12 +34,17 @@ $ sudo apt-get install sbt
 
 ### Utilization
 
-1.
+1.  Run the sbt tool in the console of your choice.  
 ```
 $ sbt
 ```
 
-2. 
+2. Within the SBT Terminal use the following command.  
 ```
-$ fastOptJS
+$ run
+```
+
+3. View webpage in any browser.  
+```
+$ http://localhost:9000/
 ```
