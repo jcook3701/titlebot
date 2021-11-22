@@ -3,7 +3,7 @@
 @import helper._
 
 <body>
-  @helper.form(action = routes.TitleBotController.simpleFormPost) {
+  @helper.form(action = routes.TitleBotController.simpleFormPost()) {
       @CSRF.formField
       @helper.inputText(webPageForm("webpage"))  
       <button type="submit" class="">Submit</button>
