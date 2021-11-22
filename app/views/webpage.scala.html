@@ -1,0 +1,11 @@
+@(webPageForm: Form[webPageData])(implicit request: RequestHeader, messagesProvider: MessagesProvider)
+
+@import helper._
+
+<body>
+  @helper.form(action = routes.TitleBotController.simpleFormPost) {
+      @CSRF.formField
+      @helper.inputText(webPageForm("webpage"))  
+      <button type="submit" class="">Submit</button>
+  } 
+</body>

@@ -1,0 +1,22 @@
+@import helper._
+
+@()
+
+@main("Welcome") {
+@defining(play.core.PlayVersion.current) { version =>
+
+<section id="content">
+  <div class="wrapper doc">
+    <article>
+      <h3>Please Enter a valid WebPage</h3>
+
+      @helper.form(action = routes.TitleBotController.index()) {
+      <button type="back" class="">back</button>
+      }
+
+    </article>
+  </div>
+</section>
+
+}
+}

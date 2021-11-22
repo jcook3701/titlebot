@@ -1,0 +1,23 @@
+@(webPagetitle: String)(implicit request: RequestHeader)
+
+@import helper._
+
+@()
+
+@main("Welcome") {
+@defining(play.core.PlayVersion.current) { version =>
+
+<section id="content">
+  <div class="wrapper doc">
+    <article>
+      <h2>Web Page Title:</h2>
+      <p>Title: @webPagetitle</p>
+      @helper.form(action = routes.TitleBotController.index()) {
+      <button type="back" class="">back</button>
+      }
+    </article>
+  </div>
+</section>
+
+}
+}
